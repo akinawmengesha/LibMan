@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/loadscreenbackground"
+    tools:context=".UserHome">
+
+    <!-- ScrollView to allow scrolling of content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <!-- Nested LinearLayout to hold other UI components -->
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <!-- Other UI components inside the LinearLayout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="734dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imageButton4"
+                    android:layout_width="match_parent"
+                    android:layout_height="136dp"
+                    app:srcCompat="@drawable/ic_launcher" />
+
+                <!-- Another LinearLayout for buttons -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="713dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <!-- Another set of buttons for View Book -->
+
+                    <LinearLayout
+                        android:layout_width="329dp"
+                        android:layout_height="194dp"
+                        android:orientation="horizontal">
+
+                        <!-- Button for Lend Book -->
+                        <FrameLayout
+                            android:layout_width="142.5dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/background_ouline"
+                            android:elevation="8dp">
+
+                            <Button
+                                android:id="@+id/btnlendbook"
+                                android:layout_width="match_parent"
+                                android:layout_height="154dp"
+                                android:backgroundTint="#00262C34"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text="BORROW"
+                                android:textColor="@color/green"
+                                android:textSize="14sp"
+                                app:icon="@drawable/borrowbook"
+                                app:iconGravity="textTop"
+                                app:iconPadding="20dp"
+                                app:iconSize="55dp"
+                                app:iconTint="@color/white" />
+                        </FrameLayout>
+
+                        <!-- Button for Return Book -->
+                        <FrameLayout
+                            android:layout_width="142.5dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/background_ouline"
+                            android:elevation="8dp">
+
+                            <Button
+                                android:id="@+id/btnreturn"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:backgroundTint="#00262C34"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text="RETURN"
+                                android:textColor="@color/green"
+                                android:textSize="14sp"
+                                app:icon="@drawable/returnbook"
+                                app:iconGravity="textTop"
+                                app:iconPadding="20dp"
+                                app:iconSize="55dp"
+                                app:iconTint="@color/white" />
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="410dp"
+                        android:orientation="horizontal">
+
+                        <FrameLayout
+                            android:layout_width="142.5dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/background_ouline"
+                            android:elevation="8dp">
+
+                            <Button
+                                android:id="@+id/btnviewbook"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:backgroundTint="#00262C34"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text="VIEW BOOK"
+                                android:textColor="@color/green"
+                                android:textSize="14sp"
+                                app:icon="@drawable/borrowbook"
+                                app:iconGravity="textTop"
+                                app:iconPadding="20dp"
+                                app:iconSize="55dp"
+                                app:iconTint="@color/white" />
+                        </FrameLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Bottom Navigation Bar -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/navbar"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:background="@drawable/button_background_round_normal"
+        android:backgroundTint="#262C34"
+        android:elevation="8dp"
+        android:translationZ="-8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <!-- Home Button -->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <Button
+                    android:id="@+id/btnhome"
+                    android:layout_width="113dp"
+                    android:layout_height="match_parent"
+                    android:background="#00FFFFFF"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Home"
+                    android:textColor="@color/green"
+                    android:textSize="10sp"
+                    app:icon="@drawable/homeicon"
+                    app:iconGravity="textTop"
+                    app:iconPadding="3dp"
+                    app:iconSize="30dp"
+                    app:iconTint="@color/white" />
+            </FrameLayout>
+
+            <!-- Search Button -->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <Button
+                    android:id="@+id/btnsearch"
+                    android:layout_width="118dp"
+                    android:layout_height="match_parent"
+                    android:background="#00FFFFFF"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Search"
+                    android:textColor="@color/green"
+                    android:textSize="10sp"
+                    app:icon="@drawable/icons8_search_30"
+                    app:iconGravity="textTop"
+                    app:iconPadding="3dp"
+                    app:iconSize="30dp"
+                    app:iconTint="@color/white" />
+            </FrameLayout>
+
+            <!-- Empty FrameLayout for spacing -->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <!-- Store Button -->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <Button
+                    android:id="@+id/btnlogout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#00FFFFFF"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Logout"
+                    android:textColor="@color/green"
+                    android:textSize="10sp"
+                    app:icon="@android:drawable/ic_input_delete"
+                    app:iconGravity="textTop"
+                    app:iconPadding="2dp"
+                    app:iconSize="30dp"
+                    app:iconTint="@color/white" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

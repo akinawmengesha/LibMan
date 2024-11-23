@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LibMan</string>
+
+    <!-- Add the package_type string array -->
+    <string-array name="package_type">
+        <item>3 Months</item>
+        <item>6 Months</item>
+        <item>12 Months</item>
+    </string-array>
+</resources>

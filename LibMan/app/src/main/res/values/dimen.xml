@@ -1,0 +1,17 @@
+<resources>
+    <!-- Standard margin for layout elements -->
+    <dimen name="margin_standard">16dp</dimen>
+    <dimen name="margin_bottom_image">16dp</dimen>
+    <dimen name="padding_normal">16dp</dimen>
+    <dimen name="padding_landscape">24dp</dimen>
+    <!-- Image max width and height -->
+    <dimen name="image_max_width">237dp</dimen>
+    <dimen name="image_max_height">167dp</dimen>
+
+    <!-- Text size for the welcome message -->
+    <dimen name="text_size">18sp</dimen>
+
+    <!-- Padding for TextView -->
+    <dimen name="padding_top_text">8dp</dimen>
+    <dimen name="padding_bottom_text">8dp</dimen>
+</resources>

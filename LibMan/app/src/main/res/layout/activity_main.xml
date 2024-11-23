@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loadscreenbackground"
+    tools:context=".MainActivity">
+
+    <!-- LinearLayout for centering content vertically and horizontally -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="@dimen/margin_standard">
+
+        <!-- ImageView for app logo with responsive scaling -->
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="128dp"
+            android:layout_height="175dp"
+            android:layout_marginBottom="@dimen/margin_bottom_image"
+            android:adjustViewBounds="true"
+            android:maxWidth="@dimen/image_max_width"
+            android:maxHeight="@dimen/image_max_height"
+            app:srcCompat="@drawable/ic_launcher"
+            android:layout_gravity="center"/>
+
+        <!-- TextView for welcome message with scalable text size -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="WELCOME TO THE LIBMAN"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size"
+            android:paddingTop="@dimen/padding_top_text"
+            android:paddingBottom="@dimen/padding_bottom_text" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

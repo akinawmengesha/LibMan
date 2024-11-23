@@ -1,3 +1,20 @@
+<<<<<<< HEAD
 *.gradle.kts linguist-language=Kotlin
 *.sql linguist-language=SQL
 
+=======
+# Treat Gradle Kotlin DSL files as Kotlin
+*.gradle.kts linguist-language=Kotlin
+
+# Treat SQL files as part of language stats
+*.sql linguist-language=SQL
+
+# Treat XML files as part of language stats
+*.xml linguist-language=XML
+
+# Treat SQLite files as part of language stats
+*.sqlite linguist-language=SQL
+*.sqlite3 linguist-language=SQL
+*.db linguist-language=SQL
+*.db3 linguist-language=SQL
+>>>>>>> d87d90acc80ef2be3ab7b0e8d34b94e3b0a8f879

@@ -18,3 +18,7 @@ To facilitate development, LibMan relies on Gradle and Kotlin scripts, which str
 
 #Security and Scalability
 Security and user authentication are central to LibMan's architecture. Java handles secure user registration, login, and access restrictions, while Kotlin scripts support encrypted data storage and device-level security. Overall, the LibMan app is designed for scalability and potential enhancements, such as cloud storage, making it a versatile, reliable tool for modern libraries.
+
+#README.pdf
+README.pdf contains technical detail report of LibMan app
+

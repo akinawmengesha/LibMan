@@ -1,0 +1,3 @@
+*.gradle.kts linguist-language=Kotlin
+*.sql linguist-language=SQL
+

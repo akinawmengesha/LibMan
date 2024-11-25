@@ -22,4 +22,6 @@ Security and user authentication are central to LibMan's architecture. Java hand
 #README.pdf
 README.pdf contains technical detail report of LibMan app
 #LibMan.apk published apk file of LibMan app works if it install in android phones
+#Admin login username is : admin@gmail.com and password : admin
+
 
